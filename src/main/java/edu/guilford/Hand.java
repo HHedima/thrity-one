@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 public class Hand {
     // instance variable
-    private ArrayList<Card> hand;
+    protected ArrayList<Card> hand;
 
-    
     // constructor
     public Hand() {
         hand = new ArrayList<Card>();
@@ -44,7 +43,6 @@ public class Hand {
      */
     public int getTotalValue() {
         int value = 0;
-        int aces = 0;
 
         for (Card card : hand) {
             switch (card.getRank()) {
@@ -79,15 +77,8 @@ public class Hand {
                     value += 10;
                     break;
                 case ACE:
-                    aces++;
+                    value += 11;
                     break;
-            }
-        }
-        for (int i = 0; i < aces; i++) {
-            if (value + 11 <= 21) {
-                value += 11;
-            } else {
-                value += 1;
             }
         }
         return value;
