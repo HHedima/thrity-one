@@ -10,6 +10,7 @@ public class ThirtyOneGame {
     private int round;
     private Deck discardPile = new Deck();
     private Random rand = new Random();
+    private boolean gameOver = false;
 
     // constructor
     public ThirtyOneGame(int numPlayers) {
@@ -47,6 +48,10 @@ public class ThirtyOneGame {
 
     public Player getPlayer(int index) {
         return players.get(index);
+    }
+
+    public boolean isGameOver() {
+        return gameOver;
     }
 
     /**
@@ -90,6 +95,7 @@ public class ThirtyOneGame {
      */
     public void playTurn(Player player) {
         if (player.getTotalValue() == 31) {
+            player.knock();
             return;
         }
         // find highest value card on top of discard pile or deck
@@ -107,20 +113,48 @@ public class ThirtyOneGame {
         player.addCard(highestCard);
         discardPile.addCard(lowCard);
 
-        
+        // knock if hand is bigger than 21
+        if (round > 1) {
+            if (player.getTotalValue() > 21) {
+                player.knock();
+            }
+        }
+    }
+
+    // reset the game
+    public void reset() {
+        deck.clear();
+        deck.build();
+        deck.shuffle();
+        discardPile.clear();
+        discardPile.addCard(deck.deal());
+        for (Player player : players) {
+            player.reset();
+            for (int j = 0; j < 3; j++) {
+                player.addCard(deck.deal());
+            }
+        }
+        round = 0;
     }
     
     /**
      * Play a round of the game
      * Each player takes a turn
      */
-    public void playRound() {
-        for (int i = 0; i < players.size(); i++) {
-            playTurn(players.get(i));
+    public String playRound() {
+        for (Player player : players) {
+            playTurn(player);
+            if (player.hasKnocked()) {
+                getWinner();
+                getLoser();
+                gameOver = true;
+                return (player.getName() + " has knocked!");
+            }
         }
         round++;
+        
+        return toString();
     }
-    
 
     // toString method
     public String toString() {

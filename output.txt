@@ -1,0 +1,127 @@
+3
+Player 1 score: 15 lives: 3
+QUEEN of SPADES
+QUEEN of CLUBS
+FIVE of SPADES
+
+Player 2 score: 10 lives: 3
+TEN of SPADES
+SEVEN of HEARTS
+FIVE of CLUBS
+
+Player 3 score: 15 lives: 3
+SEVEN of SPADES
+JACK of HEARTS
+FIVE of HEARTS
+
+
+Player 1 score: 11 lives: 3
+QUEEN of SPADES
+QUEEN of CLUBS
+ACE of DIAMONDS
+
+Player 2 score: 18 lives: 3
+TEN of SPADES
+SEVEN of HEARTS
+ACE of HEARTS
+
+Player 3 score: 10 lives: 3
+SEVEN of SPADES
+JACK of HEARTS
+EIGHT of CLUBS
+
+
+Player 1 score: 11 lives: 3
+QUEEN of SPADES
+ACE of DIAMONDS
+JACK of CLUBS
+
+Player 2 score: 21 lives: 3
+TEN of SPADES
+ACE of HEARTS
+KING of HEARTS
+
+Player 3 score: 10 lives: 3
+JACK of HEARTS
+EIGHT of CLUBS
+QUEEN of DIAMONDS
+
+
+Player 1 score: 18 lives: 3
+QUEEN of SPADES
+ACE of DIAMONDS
+SEVEN of DIAMONDS
+
+Player 2 score: 21 lives: 3
+ACE of HEARTS
+KING of HEARTS
+FIVE of SPADES
+
+Player 3 score: 10 lives: 3
+JACK of HEARTS
+QUEEN of DIAMONDS
+FIVE of CLUBS
+
+
+Player 1 score: 11 lives: 3
+QUEEN of SPADES
+ACE of DIAMONDS
+FIVE of HEARTS
+
+Player 2 score: 21 lives: 3
+ACE of HEARTS
+KING of HEARTS
+QUEEN of CLUBS
+
+Player 3 score: 17 lives: 3
+JACK of HEARTS
+QUEEN of DIAMONDS
+SEVEN of HEARTS
+
+
+Player 1 score: 17 lives: 3
+QUEEN of SPADES
+ACE of DIAMONDS
+SEVEN of SPADES
+
+Player 2 score: 21 lives: 3
+ACE of HEARTS
+KING of HEARTS
+JACK of CLUBS
+
+Player 3 score: 10 lives: 3
+JACK of HEARTS
+QUEEN of DIAMONDS
+TEN of SPADES
+
+
+Player 1 score: 11 lives: 3
+QUEEN of SPADES
+ACE of DIAMONDS
+EIGHT of CLUBS
+
+Player 2 score: 21 lives: 3
+ACE of HEARTS
+KING of HEARTS
+SEVEN of DIAMONDS
+
+Player 3 score: 10 lives: 3
+JACK of HEARTS
+QUEEN of DIAMONDS
+FIVE of SPADES
+
+
+Player 1 score: 11 lives: 3
+QUEEN of SPADES
+ACE of DIAMONDS
+FIVE of CLUBS
+
+Player 2 score: 26 lives: 3
+ACE of HEARTS
+KING of HEARTS
+FIVE of HEARTS
+
+Player 3 score: 10 lives: 2
+JACK of HEARTS
+QUEEN of DIAMONDS
+FIVE of SPADES
