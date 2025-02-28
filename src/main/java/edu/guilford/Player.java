@@ -3,6 +3,7 @@ package edu.guilford;
 public class Player extends Hand {
     private boolean knocked;
     private String name;
+    private int life = 3;
 
 
     public Player(String name) {
@@ -23,7 +24,7 @@ public class Player extends Hand {
      * calculates the score of the hand
      * The score is based on the rules of thirty-one
      * Highest sum of all cards with the same suit
-     * @return
+     * @return the score of the hand
      */
     @Override
     public int getTotalValue() {
@@ -79,10 +80,33 @@ public class Player extends Hand {
 
         return value;
     }
-    
+
+    public void loseLife() {
+        life--;
+    }
+
+    public int getLife() {
+        return life;
+    }
 
     public String getName() {
         return name;
+    }
+
+    public Card lowCard() {
+        Card lowCard = hand.get(0);
+        for (int i = 1; i < hand.size(); i++) {
+            if (hand.get(i).compareTo(lowCard) == -1) {
+                lowCard = hand.get(i);
+            }
+        }
+        return lowCard;
+    }
+
+    // toString method
+    @Override
+    public String toString() {
+        return name + " score: " + getTotalValue() + " lives: " + getLife() + "\n" + super.toString();
     }
 
 }

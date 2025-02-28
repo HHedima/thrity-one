@@ -73,8 +73,17 @@ public class Deck {
         return deck.remove(0);
     }
 
+    public Card getCard(int i) {
+        return deck.get(i);
+    }
+
     public int size() {
         return deck.size();
+    }
+
+    // add card to deck
+    public void addCard(Card card) {
+        deck.add(card);
     }
 
     // returns a string representation of the deck
